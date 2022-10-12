@@ -1,0 +1,505 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+
+/*BODY*/
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+/*logo*/
+.logo div{
+    
+    text-align: center;
+    background-image:url(../img/fondo-color-rosa-agua_69859-14.jpg);
+}
+
+/*fixed*/
+
+.fixed{
+    position: fixed;
+    right: 3%;
+    bottom: 20%;
+    background-color: antiquewhite;
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+}
+
+.fixed div{
+    margin-top: 50px;
+}
+
+.fixed h4{
+    color: black;
+}
+
+/*--foto principal de inicio--*/
+
+.Titulos div h2{
+    color: white;
+    background-color: rgb(247, 149, 165);
+    font-style: italic;
+    text-align: center;
+    border: 3px solid black;
+    padding: 10px;
+    text-shadow: 4px 3px 0px #7A7A7A, -21px -22px 11px rgba(206,89,55,0);
+}
+
+.Titulos div h1{
+background-color: rgb(247, 207, 214);
+text-align: center;
+
+}
+
+.TituloDos div h2{
+    color:white;
+    background-color:rgb(247, 149, 165);
+    padding: 10px;
+    font-style: oblique;
+}
+
+
+
+/*--FONDO DE BIENVENIDA--*/
+
+.fondo{
+    background: linear-gradient(rgba(223, 168, 168, 0.589), rgba(250, 165, 165, 0.541)), url(../img/Fondo\ uñas.jpg);
+    /* background-image: url(../img/Fondo\ uñas.jpg); */
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fondo h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px, 4px 2px 20px #CE5937;
+    animation-name: bienvenidos ;
+
+    animation-duration: 3s;
+
+    animation-timing-function: ease-in-out;
+
+    /*animation-delay: ;*/
+
+    /*animation-iteration-count: ;*/
+
+}
+
+
+/*!KEYFRAME*/
+@keyframes bienvenidos {
+    from{
+    margin-left: 100%;
+    width: 300px;
+
+    }
+    to{
+    margin-left: 0%;
+    width: 100%;
+    }  
+}
+
+
+@keyframes lista{
+from{
+    margin-right: 300%;
+    width: 800%;
+}
+
+to{
+    margin-right: 0%;
+    width: 110%;
+
+}
+
+}
+
+
+
+
+/*--lista--*/
+
+
+
+
+.lista nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: circle;
+    background-color: black;
+}
+
+.lista nav ul li a{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: wavy;
+    color:white;
+    font-size: 30px;
+    background-color: black;
+    animation-name: lista ;
+
+    animation-duration: 3s;
+
+    animation-timing-function: ease;
+}
+
+
+
+/*--redes*/
+
+.Redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+background-color: rgba(247, 207, 214, 0.582);
+width: 100%;
+height: 100px;
+
+}
+
+.Redes img{
+    transition: 2s;
+}
+
+.Redes img:hover{
+transform: scale(1.2);
+}
+
+
+
+
+
+/*servicios*/
+
+.servicios{
+    background-color: rgb(247, 207, 214);
+    display: flex;
+    justify-content: center;
+}
+
+.servicios  img{
+width: 250px;
+height: 250px;
+}
+
+.servicios div{
+    display: inline-block;
+    text-align: center;
+    margin: 50px;
+    border: 3px solid black;
+    padding: 2px;
+    border-radius: 15px;
+    
+}
+
+.servicios a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    transition-property: font size;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+.servicios p{
+    margin-bottom: 20px;
+
+}
+
+
+.servicios a:hover{
+    font-size: 30px;
+}
+
+
+
+
+/*productos*/
+
+
+.grid-contenedor{
+    width: 100%;
+    height: 350px;
+    background-color:  rgb(247, 207, 214);
+}
+
+.grid-contenedor .galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+.grid-contenedor .galeria div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 315px;
+    background-color:  rgb(247, 207, 214);
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+
+.grid-contenedor .galeria div img{
+    width: 50%;
+    height: 200px ;
+    
+}
+
+
+
+.producto1{
+    background-color: rgb(247, 207, 214);
+    display: flex;
+    justify-content: center;
+}
+
+.producto1 div img{
+    width: 250px;
+    height: 250px;
+}
+
+.producto1 div{
+    display: inline-block;
+    text-align: center;
+    margin: 50px;
+    border: 3px solid black;
+    padding: 2px;
+    border-radius: 15px;
+}
+
+.producto1 a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    margin: 15%;
+    transition-property: font size;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+
+.producto1 p{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.producto1 a:hover{
+    font-size: 30px;
+}
+
+
+
+/*html contacto*/
+
+/*formulario*/
+
+.informacion{
+text-align: center;
+font-size: 40px;
+background-color: rgb(247, 207, 214);
+border: 3px solid black;
+}
+
+.formulario{
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(247, 207, 214);
+    border: 3px solid black;
+    
+}
+
+.Red{
+    background-color:  rgba(247, 207, 214, 0.582);
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.genero{
+    font-size: 25px;
+}
+
+/*html productos*/
+
+.TituloProducto{
+    color:white;
+    background-color:rgb(247, 149, 165);
+    padding: 10px;
+    font-style: oblique;
+    border: 3px solid black;
+    text-align: center;
+    text-shadow: 4px 3px 0px #7A7A7A, -21px -22px 11px rgba(206,89,55,0);
+}
+
+
+
+
+
+
+
+
+
+/*productos descripcion*/
+
+
+
+.Descripcion h1{
+    font-size: 50px;
+    text-align: center;
+    background-color:rgb(247, 149, 165);
+    border: 3px solid black;
+    color: white;
+    font-style:initial;
+    font-style: oblique;
+    
+}
+
+.Descripcion p{
+    display: flex;
+justify-content: center;
+font-size: 25px;
+background-color: rgb(247, 207, 214);
+border: 3px solid black;
+font-style: italic;
+padding: 120px 120px 120px 120px;
+}
+
+
+/*HMTL SERVICIOS*/
+
+
+.TituloServicios{
+    color: white;
+    background-color: rgb(247, 149, 165);
+    font-style: oblique;
+    text-align: center;
+    border: 3px solid black;
+    padding: 10px;
+    text-shadow: 4px 3px 0px #7A7A7A, -21px -22px 11px rgba(206,89,55,0);
+}
+
+
+/*!GRID HTML ACERCA DE*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** media queries*/
+
+@media (max-width: 350px){
+
+    .grid-contenedor .galeria div{
+        height: 500px;
+        width: 100%;
+        margin: auto;
+        
+    }
+
+.logo img{
+    width: 100%;
+    padding: 3rem;
+}
+
+.lista nav ul {
+    flex-direction: column;
+}
+
+
+.lista nav ul li a{
+    font-size: 1rem;
+    
+}
+
+.lista nav ul li{
+    margin: 8px auto;
+}
+
+.fondo{
+    height: 70%;
+    background:  url(../img/Fondo\ para\ mobile.jpg);
+}
+
+.servicios{
+    flex-direction: column;
+    
+}
+
+
+.servicios img{
+    width: 100%;
+    height: auto;
+}
+
+
+.producto1{
+    flex-direction: column;
+}
+
+.producto1 div img{
+    width: 100%;
+    height: auto;
+}
+
+
+.Descripcion p{
+    padding: 2rem;
+    font-size: 20px;
+}
+
+
+.fixed{
+    display: none;
+}
+
+.Redes{
+    height: 450px;
+}
+
+}

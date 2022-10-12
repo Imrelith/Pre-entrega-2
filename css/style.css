@@ -1,0 +1,37 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    }
+
+.productos div h2{
+    color:red
+}
+
+
+.acercaDe div h2{
+    background-color: aqua;
+}
+
+header nav ul{
+    list-style-type:decimal-leading-zero
+}
+
+header nav ul li a{
+    text-decoration:solid;
+    color:white;
+    background-color: black;
+    font-size:45px;
+    font-style: oblique;
+    font-weight: 200;
+    
+}
+header nav ul li{
+    display: inline-block;
+}
+
+.logo{
+    background-image: url(../img/pexels-ricardo-lima-13374931.jpg);
+    width: 100%;
+    height:calc(100vh - 58px);
+};
+
