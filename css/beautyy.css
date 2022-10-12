@@ -352,6 +352,15 @@ border: 3px solid black;
     align-items: center;
 }
 
+
+.Red img{
+    transition: 2s;
+}
+
+.Red img:hover{
+transform: scale(1.2);
+}
+
 .genero{
     font-size: 25px;
 }
